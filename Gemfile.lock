@@ -121,7 +121,7 @@ DEPENDENCIES
   debugger
   haml
   jquery-rails
-  pg (= 0.12.2)
+  pg
   rails (= 3.2.16)
   rails_12factor
   sass-rails (~> 3.2.3)
