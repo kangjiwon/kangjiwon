@@ -1,0 +1,9 @@
+%h2 Edit Game
+= form_tag game_path(@game), :method => :put do
+ = label :game, :title, 'Title'
+ = text_field :game, 'title'
+ = label :game, :rating, 'Rating'
+ = select :game, :rating, ['G','PG','PG-13','R','NC-17']
+ = label :game, :release_date, 'Released On'
+ = date_select :game, :release_date
+ = submit_tag 'Save Changes'

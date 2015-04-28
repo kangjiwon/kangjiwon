@@ -1,0 +1,17 @@
+%h1 All Games
+
+%table#games
+  %thead
+    %tr
+      %th Game Title
+      %th Rating
+      %th Release Date
+      %th More..
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td=game.title
+        %td=game.rating
+        %td=game.release_date
+        %td=link_to "More about #{game.title}", game_path(game)
+=link_to 'Add new game', new_game_path

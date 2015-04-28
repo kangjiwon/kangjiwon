@@ -1,0 +1,13 @@
+%h2 Details about #{@game.title}
+%ul#details
+  %li
+    Rating:
+    = @game.rating
+  %li
+    Released on:
+    = @game.release_date.strftime("%B %d, %Y") 
+%h3 Description:
+%p#description= @game.description
+= link_to 'Edit into', edit_game_path(@game)
+= link_to 'Delete', game_path(@game), :method => :delete
+= link_to 'Back to game list', games_path
