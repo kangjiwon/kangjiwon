@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.16'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 #
@@ -12,16 +11,15 @@ end
 #
 ruby '1.9.3'
 
+
 group :development, :test do
   gem 'sqlite3'
 end
 
 group :production do
-  gem 'thin'
   gem 'pg', '0.12.2'
   gem 'rails_12factor'
 end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
