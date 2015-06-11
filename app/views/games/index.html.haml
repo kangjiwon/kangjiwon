@@ -1,9 +1,9 @@
-%h1 All Games
+%h1 All Movie
 
 %table#games
   %thead
     %tr
-      %th Game Title
+      %th Movie Title
       %th Rating
       %th Release Date
       %th More..
@@ -14,4 +14,4 @@
         %td=game.rating
         %td=game.release_date
         %td=link_to "More about #{game.title}", game_path(game)
-=link_to 'Add new game', new_game_path
+=link_to 'Add new movie', new_game_path
